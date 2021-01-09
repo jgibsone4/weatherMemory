@@ -1,10 +1,14 @@
-var searchPage = $(".searchPage");
-var vaMapImg = $(".vaMapImg");
+$(document).ready(function(){
 
-$(searchPage).hide();
+    var searchPage = $(".searchPage");
+    var vaMapImg = $(".vaMapImg");
 
-$(vaMapImg).click(function(){
+    $(searchPage).hide();
+
+    $(vaMapImg).click(function(){
     $(vaMapImg).fadeOut("slow");
     $(searchPage).fadeIn("slow");
-})
+    })
 
+    
+});
