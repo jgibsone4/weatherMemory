@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather memory* </title>
+
+    <!-- Link Refs to External Frameworks-->
+    <!-- Compiled and minified CSS - Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Philosopher&display=swap" rel="stylesheet">
+    <!--Customized CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="headerImage"><img src="assets/images/landingBg.png" class="headerImage" alt="header image of weather"></div>
+    <div class="headerText col s12 m12 l12">
+        <p class="nameText flow-text">Weather Memory</p><br>
+        <p class="descText flow-text">a visual tool to remember your special day</p>
+    </div>
+
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="location" class="form-label location"></label>
+                <input type="location" class="form-control location" id="location" placeholder="Location">
+                <label for="date" class="form-label date"></label>
+                <input type="location" class="form-control date" id="date" placeholder="Date">
+                <label for="time" class="form-label time"></label>
+                <input type="time" class="form-control time" id="time" placeholder="Time">
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        <div class="row">
+            <!--Header Name-->
+            <h1 id="city-name">blank</h1>
+        <h2 id="current-temp">blank</h2>
+    
+        </div>
+        
+    </div>
+
+
+    <!--JQuery Script Linking-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
