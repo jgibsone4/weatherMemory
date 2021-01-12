@@ -1,0 +1,32 @@
+body {
+    background-color: #322634;
+}
+
+.headerImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+.headerText {
+    margin-top: -85px;
+}
+
+.nameText {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    color: #d38e7e;
+    font-size: 6.5vh;
+    margin: 0;
+    
+}
+
+.descText {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: -42px;
+    letter-spacing: 1.7px;
+    color: #81656d;
+}
