@@ -25,6 +25,9 @@ var minuteInput = "25";
     // console.log(dayInput.val());
 
     var apiKey = "G9CVLC87MQTZ38PJ3ZJZCWRZJ";
+    var queryURL =
+    "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history?&aggregateHours=24&startDateTime="+yearInput+"-"+monthInput+"-"+dayInput+"T"+hourInput+":"+minuteInput+":00&endDateTime="+yearInput+"-"+monthInput+"-"+dayInput+"T"+hourInput+":"+minuteInput+":30&unitGroup=us&contentType=json&dayStartTime=0:0:00&dayEndTime=0:0:00&location="+cityInput+","+stateInput+",US&key="+apiKey;
+
 
     var queryURL =   "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history?&aggregateHours=24&startDateTime="+yearInput+"-"+monthInput+"-"+dayInput+"T"+hourInput+":"+minuteInput+":00&endDateTime="+yearInput+"-"+monthInput+"-"+dayInput+"T"+hourInput+":"+minuteInput+":00&unitGroup=us&contentType=json&dayStartTime=0:0:00&dayEndTime=0:0:00&location="+cityInput+","+stateInput+",US&key=G9CVLC87MQTZ38PJ3ZJZCWRZJ"
     
