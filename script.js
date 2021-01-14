@@ -1,6 +1,10 @@
 
 $(document).ready(function () {
 
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
 //Create value from input
 var cityInput = $('.cityInput').val();
 var stateInput = $('.stateInput').val();
@@ -18,7 +22,9 @@ var dayInput = $('.dayInput').val();
 
     var apiKey = "G9CVLC87MQTZ38PJ3ZJZCWRZJ";
     var queryURL =
-    "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history?&aggregateHours=24&startDateTime="+yearInput+"-"+monthInput+"-"+dayInput+"T"+hourInput+":"+minuteInput+":00&endDateTime="+yearInput+"-"+monthInput+"-"+dayInput+"T"+hourInput+":"+minuteInput+":30&unitGroup=us&contentType=csv&dayStartTime=0:0:00&dayEndTime=0:0:00&location="+cityInput+","+stateInput+",US&key="+apiKey;
+    "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/history?&aggregateHours=24&startDateTime="+yearInput+"-"+monthInput+"-"+dayInput+"T"+hourInput+":"+minuteInput+":00&endDateTime="+yearInput+"-"+monthInput+"-"+dayInput+"T"+hourInput+":"+minuteInput+":30&unitGroup=us&contentType=json&dayStartTime=0:0:00&dayEndTime=0:0:00&location="+cityInput+","+stateInput+",US&key="+apiKey;
+
+
 
     $.ajax({
       url: queryURL,
