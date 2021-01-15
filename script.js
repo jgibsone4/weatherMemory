@@ -65,3 +65,4 @@ function selectValue(){
   //Call the function
   $(".submitBtn").click(performSearch);
 
+
