@@ -52,11 +52,9 @@
                             <option value="11">November</option>
                             <option value="12">December</option>
                         </select>
-                        <label>Select Month</label><br>
-                        <span class="monthResult"><h3>Result</h1></span>
                     </div>
                     <div class="dayBox input-field col s12 m4 l4">
-                        <select>
+                        <select id="dayInput">
                         <option value="" disabled selected>Day</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
@@ -93,7 +91,7 @@
                         <label>Select Day</label>
                     </div>
                     <div class="yearBox input-field col s12 m4 l4">
-                        <input placeholder="Year" class="yearInput" id="year-input" type="text">
+                        <input type="text" value="" id="yearInput">
                         <label for="year-input">Type Year</label><br>
                         <p style="font-style: italic; font-size: 14px; margin-top: -10px;">Regrettably, our memory only goes back
                         to 1970</p>
@@ -102,7 +100,7 @@
 
                 </div>
                 <div class="row">
-                    <div class="hourBox input-field col s12 m4 l4">
+                    <div class="hourBox input-field col s12 m4 l4 hideContent">
                         <select>
                             <option value="" disabled selected>Hour</option>
                             <option value="01">01am</option>
@@ -136,11 +134,11 @@
                 </div>
                 <div class="row">
                     <div class="cityBox input-field col s12 m4 l4">
-                        <input placeholder="City" class="cityInput" id="city-input" type="text">
+                        <input placeholder="City" id="cityInput" type="text">
                         <label for="city-input">Enter City</label>
                     </div>
                     <div class="stateBox input-field col s12 m4 l4">
-                        <input placeholder="State" class="stateInput" id="state-input" type="text">
+                        <input placeholder="State" id="stateInput" type="text">
                         <label for="state-input">Enter State</label><br>
                     </div>
                 </div>
@@ -148,12 +146,16 @@
             
 
             </div>
-
-            <div class="resultPage hideContent col s12 m12 l12">
-                <h1 id="city-name">blank</h1>
-                <h2 id="current-temp">blank</h2>
+            <div class="resultsPage col s12 m12 l12">
+                <p class="resultsDisplay">The weather in <span id="cityName"></span>, <span id="stateName"></span> on <span id="monthDisplay"></span>-<span id="dayDisplay"></span>-<span id="yearDisplay"></span> was:<br>
+                <br>
+                <span id="tempDisplay"></span>°f<br>
+                It was <span id="conditionsDisplay"></span> out, how nostalgic!<br>
+                </p>
+                <br><button class="homeBtn">Try Again</button>
 
             </div>
+            
         </div>
 
     </div>
