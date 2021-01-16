@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Philosopher&family=Comfortaa:wght@300&family=Montserrat+Alternates:wght@300&family=Syne&family=Noto+Serif+TC:wght@300&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Philosopher&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 
     <!--Customized CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Header Image and App Name/Description Text-->
     <div class="headerImage"><img src="assets/images/landingBg.png" class="headerImage" alt="header image of weather">
     </div>
     <div class="headerText col s12 m12 l12">
         <p class="nameText flow-text">Weather Memory</p><br>
         <p class="descText flow-text">a visual tool to remember your special day</p>
     </div>
+    <!--Main Content Box-->
     <div class="mainContent container">
         <div class="row">
+            <!--Sets the following columns as "front page"!-->
             <div class="frontPage col s12 m12 l12">
                 <section class="instructions">
                     <p>Search for a day that means a lot to you</p>
                     <div class="divider"></div>
                 </section><br>
+                <!--Search fields for Weather API Query-->
                 <div class="row">
                     <div class="input-field col s12 m4 l4">
                         <select id="monthInput">
@@ -106,14 +106,16 @@
                         <label for="state-input">Enter State</label><br>
                     </div>
                 </div>
+                    <!--Search Button-->
                     <button class="submitBtn">Search</button>
 
             </div>
         </div>
-
+        <!-- The following is where all the results for the API calls are-->
         <div class="resultsPage row">
 
             <div class="customPage col s12 m6 l6">
+                <!-- Weather history results-->
                 <p class="resultsDisplay">The weather in <span id="cityName" style="color: #1c3139;"></span>, <span id="stateName"></span> on <span id="monthDisplay"></span>-<span id="dayDisplay"></span>-<span id="yearDisplay"></span> was:<br>
                 <span id="tempDisplay"></span>°f<br>
                 It was <span id="conditionsDisplay"></span>, Amazin'!<br>
@@ -122,8 +124,7 @@
                 <br><button class="homeBtn">Search another date?</button><br>
 
             </div>
-            </div>
-
+            <!--Billboard Chart API-->
             <div class="billboardAPI col s12 m6 l6">
                 <p class="billboardResults">You may have heard
                 <span class="songResult"></span> on the radio, it was the top hit on the Billboard charts on this day!</p>
