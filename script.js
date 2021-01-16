@@ -54,7 +54,7 @@ $(document).ready(function() {
 
     });
       
-    });
+    
     $("#cityName").text(cityInput);
     $("#stateName").text(stateInput);
     $("#monthDisplay").text(monthValue);
@@ -108,9 +108,3 @@ $(document).ready(function() {
   });
 
   });
-
-});
-  
-});
-
-
