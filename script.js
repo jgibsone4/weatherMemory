@@ -84,4 +84,8 @@ $(document).ready(function() {
             $("#stateInput").append(localStorage.getItem("state"));
   });
 });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 3d7ea1155f2cc8c09c330838e5aeafb9d8a9355b
