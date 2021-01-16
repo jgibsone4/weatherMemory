@@ -8,11 +8,10 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    
 }
 
 .headerText {
-    margin-top: -85px;
+    margin-top: -55px;
 }
 
 .nameText {
@@ -21,7 +20,6 @@ body {
     color: #d38e7e;
     font-size: 6.5vh;
     margin: 0;
-    
 }
 
 .descText {
@@ -33,9 +31,51 @@ body {
     color: #81656d;
 }
 
+.instructions {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #322634;
+}
+
+.divider {
+    background-color: #605e61;
+    margin-top: -20px;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+
+
 .mainContent {
     background-color: rgb(255,255,255,0.4);
     border-radius: 12px;
+}
+
+.customPage {
+    border-right: 1px solid black;
+}
+
+.resultsDisplay {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 17px;
+    
+}
+
+#cityName {
+    color: #1c3139;
+}
+
+.billboardResults {
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+button, input, select, label {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 20px;
 }
 
 .hideContent {
