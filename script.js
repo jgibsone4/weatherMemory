@@ -42,17 +42,41 @@ $(document).ready(function() {
       $("#conditionsDisplay").text(conditions);
       $("#tempDisplay").text(temp);
       //theoretically changes the page styling depending on the conditions variable
-      if (conditions = "Clear") {
+      if (conditions === "Clear") {
         $(".headerImage").attr("src", "assets/images/clearDayBg.png")
         $("body").css("background-color","#639edc");
         $(".nameText").css("color", "#efefef");
         $(".descText").css("color", "#efefef");
       }
-      if (conditions = "Partially cloudy") {
+      if (conditions === "Partially cloudy") {
         $(".headerImage").attr("src", "assets/images/partlyCloudyDayBg.png")
         $("body").css("background-color","#4e91ab");
         $(".nameText").css("color", "#0f394a");
         $(".descText").css("color", "#0f394a");
+      }
+      if (conditions === "Rain, Partially cloudy") {
+        $(".headerImage").attr("src", "assets/images/rainpartiallycloudBg.png")
+        $("body").css("background-color","#3c4f55");
+        $(".nameText").css("color", "#d7d0bd");
+        $(".descText").css("color", "#d7d0bd");
+      }
+      if (conditions === "Rain") {
+        $(".headerImage").attr("src", "assets/images/cloudySkyBg.png")
+        $("body").css("background-color","#343b41");
+        $(".nameText").css("color", "#9ea0a1");
+        $(".descText").css("color", "#9ea0a1");
+      }
+      if (conditions === "Overcast") {
+        $(".headerImage").attr("src", "assets/images/overcastBg.png")
+        $("body").css("background-color","#e7e7e7");
+        $(".nameText").css("color", "#454c52");
+        $(".descText").css("color", "#454c52");
+      }
+      if (conditions === "Rain, Overcast") {
+        $(".headerImage").attr("src", "assets/images/overcastBg.png")
+        $("body").css("background-color","#2d4047");
+        $(".nameText").css("color", "#454c52");
+        $(".descText").css("color", "#454c52");
       }
 
     });
