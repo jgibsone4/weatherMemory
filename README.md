@@ -48,7 +48,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ## License
 
-[License Guidlines](https://github.com/jgibsone4/weatherMemory/blob/main/LICENSE) 
+[License Guidlines](https://github.com/jgibsone4/weatherMemory/blob/main/LICENSE.txt) 
 
 BSD 2-Clause License
 Copyright (c) 2020, 
