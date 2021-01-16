@@ -34,6 +34,7 @@ $(document).ready(function() {
       var address = response.days[0].address;
       console.log(response);
       $("#conditionsDisplay").text(conditions);
+      $("#tempDisplay").text(temp);
     });
 
     $("#cityName").text(cityInput);
@@ -43,18 +44,38 @@ $(document).ready(function() {
     $("#yearDisplay").text(yearInput);
 
 
-    // var apiKey  = "gs7YZMi9EDZOcxQZ3oiMyOokV9g4S74u4MiKtOI9";
-    // var queryURL ="https://api.nasa.gov/planetary/apod?api_key="+apiKey;
+    // apiKey2 = "YreeZrO5piLWfH99ELO1qsiST1iuNaBz1sMlVyUc"
+    
+    // var queryUrl2 = "https://api.nasa.gov/planetary/earth/imagery?lon=-95.33&lat=29.78&date="+yearInput"-"+monthValue"-"+dayInput+"&dim=0.15&"+apiKey2;
+
     // $.ajax({
-    //   url: queryURL,
+    //   url: queryUrl2,
     //   method: "GET",
     // }).then(function (response) {
-    //   console.log(response);
-      
+    //   $("#earth-day").append(response)
     // });
+    
   };
 
+  let search = document.querySelector(".submitBtn")
+
+  search.addEventListener("click", ()=> {
+    console.log("search pressed")
+    sendApiRequest()
+  })
+
+  async function sendApiRequest() {
+    let API_KEY = "YreeZrO5piLWfH99ELO1qsiST1iuNaBz1sMlVyUc"
+    let response = await fetch (`https://api.nasa.gov/EPIC/api/natural/date/2019-05-30?api_key=${API_KEY}`);
+    console.log(response)
+    let data = await response.json()
+    console.log(data)
+    useApiData(data)
+  }
   
+  function useApiData(data) {
+    document.querySelector("#earth-day").innerHTML = data[0].dscovr_j2000_position.image
+  }
 
 
   //Call the function
