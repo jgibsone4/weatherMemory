@@ -1,3 +1,9 @@
+var $monthInput = $("#monthInput");
+var $dayInput = $("#dayInput");
+var $yearInput = $("#yearInput");
+var $cityInput = $("#cityInput");
+var $stateInput = $("#stateInput");
+
 $(document).ready(function() {
   //Hides the second page upon loading the page
   $(".resultsPage").hide();
@@ -75,7 +81,7 @@ $(document).ready(function() {
           "crossDomain": true,
           "url": "https://billboard-api2.p.rapidapi.com/hot-100?date="+year+"-"+month+"-"+day+"&range=1-10",
           "method": "GET",
-          "headers": {
+          "headers":q {
             "x-rapidapi-key": "0f02775473mshc14b0d816c62eb9p13fc46jsnbc8853f8dafb",
             "x-rapidapi-host": "billboard-api2.p.rapidapi.com"
           }
@@ -97,6 +103,17 @@ $(document).ready(function() {
       $("body").css("background-color","#322634");
       $(".nameText").css("color", "#d38e7e");
       $(".descText").css("color", "#81656d");
+            localStorage.setItem("month", $monthInput.val());
+            localStorage.setItem("day", $dayInput.val());
+            localStorage.setItem("year", $yearInput.val());
+            localStorage.setItem("city", $cityInput.val());
+            localStorage.setItem("state", $stateInput.val());
+            //event persists when saved
+            $("#monthInput").append(localStorage.getItem("month"));
+            $("#dayInput").append(localStorage.getItem("day"));
+            $("#yearInput").append(localStorage.getItem("year"));
+            $("#cityInput").append(localStorage.getItem("city"));
+            $("#stateInput").append(localStorage.getItem("state"));
     });
   });
 });
