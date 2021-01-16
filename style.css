@@ -26,26 +26,50 @@ body {
     letter-spacing: 1.7px;
     color: #81656d;
 }
+
 .instructions {
     font-family: 'Comfortaa', cursive;
     font-size: 30px;
     text-align: center;
     color: #322634;
 }
+
 .divider {
     background-color: #605e61;
     margin-top: -20px;
 }
+
+
 .row {
     margin-bottom: 5px;
 }
-label {
-    color: #d64144;
-}
+
 .mainContent {
     background-color: rgb(255,255,255,0.4);
     border-radius: 12px;
 }
-.hideContent {
-    display: none;
+
+.customPage {
+    border-right: 1px solid black;
+}
+
+.resultsDisplay {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 17px;
+    
+}
+
+#cityName {
+    color: #1c3139;
+}
+
+.billboardResults {
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+button, input, select, label {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 20px;
 }

@@ -10,7 +10,11 @@
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Philosopher&family=Comfortaa:wght@300&family=Montserrat+Alternates:wght@300&family=Syne&family=Noto+Serif+TC:wght@300&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Philosopher&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
     <!--Customized CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -91,38 +95,7 @@
                         to 1970</p>
                     </div><br>
                 </div>
-                <div class="row">
-                    <div class="hourBox input-field col s12 m4 l4 hideContent">
-                        <select>
-                            <option value="" disabled selected>Hour</option>
-                            <option value="01">01am</option>
-                            <option value="02">02am</option>
-                            <option value="03">03am</option>
-                            <option value="04">04am</option>
-                            <option value="05">05am</option>
-                            <option value="06">06am</option>
-                            <option value="07">07am</option>
-                            <option value="08">08am</option>
-                            <option value="09">09am</option>
-                            <option value="10">10am</option>
-                            <option value="11">11am</option>
-                            <option value="12">12pm</option>
-                            <option value="13">1pm</option>
-                            <option value="14">2pm</option>
-                            <option value="15">3pm</option>
-                            <option value="16">4pm</option>
-                            <option value="17">5pm</option>
-                            <option value="18">6pm</option>
-                            <option value="19">7pm</option>
-                            <option value="20">8pm</option>
-                            <option value="21">9pm</option>
-                            <option value="22">10pm</option>
-                            <option value="23">11pm</option>
-                            <option value="00">12am</option>
-                        </select>
-                        <label>Select Hour</label>
-                    </div>
-                </div>
+              
                 <div class="row">
                     <div class="cityBox input-field col s12 m4 l4">
                         <input placeholder="City" id="cityInput" type="text">
@@ -134,18 +107,28 @@
                     </div>
                 </div>
                     <button class="submitBtn">Search</button>
+
             </div>
-            <div class="resultsPage col s12 m12 l12">
-                <p class="resultsDisplay">The weather in <span id="cityName"></span>, <span id="stateName"></span> on <span id="monthDisplay"></span>-<span id="dayDisplay"></span>-<span id="yearDisplay"></span> was:<br>
-                <br>
+        </div>
+
+        <div class="resultsPage row">
+
+            <div class="customPage col s12 m6 l6">
+                <p class="resultsDisplay">The weather in <span id="cityName" style="color: #1c3139;"></span>, <span id="stateName"></span> on <span id="monthDisplay"></span>-<span id="dayDisplay"></span>-<span id="yearDisplay"></span> was:<br>
                 <span id="tempDisplay"></span>°f<br>
                 It was <span id="conditionsDisplay"></span>, Amazin'!<br>
                 </p>
-                <div id="earth-day"></div>
-                <br><button class="homeBtn">Try Again</button><br>
-                <h1 style="font-size: large; color: white;">Who had the biggest hit at that time?</h1>
-                <p class="songResult" style="color: rgb(255, 148, 109);"></p>
+                
+                <br><button class="homeBtn">Search another date?</button><br>
+
             </div>
+            </div>
+
+            <div class="billboardAPI col s12 m6 l6">
+                <p class="billboardResults">You may have heard
+                <span class="songResult"></span> on the radio, it was the top hit on the Billboard charts on this day!</p>
+            </div>
+            
         </div>
     </div>
     </div>
@@ -154,3 +137,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
 </body>
+
+
+
+</html>
+
