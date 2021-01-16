@@ -3,27 +3,21 @@ body {
     font-family: 'Jaldi', sans-serif;
     font-size: 18px;
 }
-
 .headerImage {
     display: block;
     width: 100%;
     height: auto;
-    
 }
-
 .headerText {
-    margin-top: -85px;
+    margin-top: -55px;
 }
-
 .nameText {
     font-family: 'Philosopher', sans-serif;
     text-align: center;
     color: #d38e7e;
     font-size: 6.5vh;
     margin: 0;
-    
 }
-
 .descText {
     font-family: 'Jaldi', sans-serif;
     font-size: 17px;
@@ -32,13 +26,26 @@ body {
     letter-spacing: 1.7px;
     color: #81656d;
 }
-
+.instructions {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #322634;
+}
+.divider {
+    background-color: #605e61;
+    margin-top: -20px;
+}
+.row {
+    margin-bottom: 5px;
+}
+label {
+    color: #d64144;
+}
 .mainContent {
     background-color: rgb(255,255,255,0.4);
     border-radius: 12px;
 }
-
 .hideContent {
     display: none;
 }
-
