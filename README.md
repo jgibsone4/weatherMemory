@@ -15,7 +15,6 @@ Deployed Link: https://jgibsone4.github.io/weatherMemory/
 * [Title](#weatherMemory)
 * [Description](#description)
 * [Usage](#usage)
-* [Credits](#credits)
 * [Contributing](#contributing)
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
@@ -28,7 +27,7 @@ Deployed Link: https://jgibsone4.github.io/weatherMemory/
 ![Screenshot of Client Site](https://github.com/jgibsone4/weatherMemory/blob/main/assets/images/results.png)
 
 
-## Credits
+
 
 Collaborators                               
 ------------                                 
