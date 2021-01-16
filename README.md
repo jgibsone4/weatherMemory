@@ -22,7 +22,10 @@ Deployed Link: https://jgibsone4.github.io/weatherMemory/
 
 
 ## Usage 
-
+![Screenshot of Client Site](https://github.com/jgibsone4/weatherMemory/blob/main/assets/images/main.png)
+![Screenshot of Client Site](https://github.com/jgibsone4/weatherMemory/blob/main/assets/images/20210116_045126.jpg)
+![Screenshot of Client Site](https://github.com/jgibsone4/weatherMemory/blob/main/assets/images/Screenshot_20210116-045108_Brave.jpg)
+![Screenshot of Client Site](https://github.com/jgibsone4/weatherMemory/blob/main/assets/images/results.png)
 
 
 ## Credits
