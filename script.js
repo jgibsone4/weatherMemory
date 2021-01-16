@@ -81,7 +81,7 @@ $(document).ready(function() {
           "crossDomain": true,
           "url": "https://billboard-api2.p.rapidapi.com/hot-100?date="+year+"-"+month+"-"+day+"&range=1-10",
           "method": "GET",
-          "headers":q {
+          "headers": {
             "x-rapidapi-key": "0f02775473mshc14b0d816c62eb9p13fc46jsnbc8853f8dafb",
             "x-rapidapi-host": "billboard-api2.p.rapidapi.com"
           }
