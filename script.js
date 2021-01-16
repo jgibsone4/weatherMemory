@@ -71,21 +71,7 @@ $(document).ready(function() {
   $(".submitBtn").click(function() {
     $(".frontPage").fadeOut(400, function () {
             $('.resultsPage').fadeIn();
-        });
-    
-  $(".homeBtn").click(function() {
-    $(".resultsPage").fadeOut(400, function () {
-      $('.frontPage').fadeIn()
-        $(".headerImage").attr("src", "assets/images/landingBg.png")
-        $("body").css("background-color","#322634");
-        $(".nameText").css("color", "#d38e7e");
-        $(".descText").css("color", "#81656d");
-      
-  });
-  
-});
-    
-        var year = $("#yearInput").val();
+       var year = $("#yearInput").val();
         var month = GetInputValue('monthInput');
         var day = GetInputValue('dayInput');
         var topSong = {
@@ -105,6 +91,21 @@ $(document).ready(function() {
           $(".songResult").text(artistNumberOne);
           $(".songResult").append(" - "+ '"'+songNumberOne+'"');
         });
+    
+    
+  $(".homeBtn").click(function() {
+    $(".resultsPage").fadeOut(400, function () {
+      $('.frontPage').fadeIn()
+        $(".headerImage").attr("src", "assets/images/landingBg.png")
+        $("body").css("background-color","#322634");
+        $(".nameText").css("color", "#d38e7e");
+        $(".descText").css("color", "#81656d");
+      
+  });
+  
+});
+    
+       
   });
 
-  });
+
