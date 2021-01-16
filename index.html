@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather memory* </title>
-
     <!-- Link Refs to External Frameworks-->
     <!-- Compiled and minified CSS - Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Philosopher&family=Comfortaa:wght@300&family=Montserrat+Alternates:wght@300&family=Syne&family=Noto+Serif+TC:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Philosopher&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
     <!--Customized CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <div class="headerImage"><img src="assets/images/landingBg.png" class="headerImage" alt="header image of weather">
     </div>
     <div class="headerText col s12 m12 l12">
         <p class="nameText flow-text">Weather Memory</p><br>
         <p class="descText flow-text">a visual tool to remember your special day</p>
     </div>
-
     <div class="mainContent container">
         <div class="row">
-
             <div class="frontPage col s12 m12 l12">
-
                 <section class="instructions">
                     <p>Search for a day that means a lot to you</p>
                     <div class="divider"></div>
@@ -97,10 +94,8 @@
                         <p style="font-style: italic; font-size: 14px; margin-top: -10px;">Regrettably, our memory only goes back
                         to 1970</p>
                     </div><br>
-
-
                 </div>
-                
+              
                 <div class="row">
                     <div class="cityBox input-field col s12 m4 l4">
                         <input placeholder="City" id="cityInput" type="text">
@@ -112,7 +107,6 @@
                     </div>
                 </div>
                     <button class="submitBtn">Search</button>
-            
 
             </div>
         </div>
@@ -122,10 +116,12 @@
             <div class="customPage col s12 m6 l6">
                 <p class="resultsDisplay">The weather in <span id="cityName" style="color: #1c3139;"></span>, <span id="stateName"></span> on <span id="monthDisplay"></span>-<span id="dayDisplay"></span>-<span id="yearDisplay"></span> was:<br>
                 <span id="tempDisplay"></span>°f<br>
-                It was <span id="conditionsDisplay"></span> out, how nostalgic!<br>
+                It was <span id="conditionsDisplay"></span>, Amazin'!<br>
                 </p>
                 
                 <br><button class="homeBtn">Search another date?</button><br>
+
+            </div>
             </div>
 
             <div class="billboardAPI col s12 m6 l6">
@@ -134,12 +130,8 @@
             </div>
             
         </div>
-
     </div>
-
     </div>
-
-
     <!--JQuery Script Linking-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -147,4 +139,6 @@
 </body>
 
 
+
 </html>
+

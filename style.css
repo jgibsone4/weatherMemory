@@ -3,17 +3,14 @@ body {
     font-family: 'Jaldi', sans-serif;
     font-size: 18px;
 }
-
 .headerImage {
     display: block;
     width: 100%;
     height: auto;
 }
-
 .headerText {
     margin-top: -55px;
 }
-
 .nameText {
     font-family: 'Philosopher', sans-serif;
     text-align: center;
@@ -21,7 +18,6 @@ body {
     font-size: 6.5vh;
     margin: 0;
 }
-
 .descText {
     font-family: 'Jaldi', sans-serif;
     font-size: 17px;
@@ -43,10 +39,10 @@ body {
     margin-top: -20px;
 }
 
+
 .row {
     margin-bottom: 5px;
 }
-
 
 .mainContent {
     background-color: rgb(255,255,255,0.4);
@@ -77,8 +73,3 @@ button, input, select, label {
     font-family: 'Jaldi', sans-serif;
     font-size: 20px;
 }
-
-.hideContent {
-    display: none;
-}
-

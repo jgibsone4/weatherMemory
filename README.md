@@ -4,14 +4,10 @@
 ![GitHub forks](https://img.shields.io/github/forks/jgibsone4/jgibsone4.github.io?style=social)
 
 ---
+# Description 
+Project 1 where we worked on a team to design and develop an app.  We were tasked with using multiple API servers in our code. While also using Github projects, and debuggin in a team settign while pulling, and pushing. The app allows the user to enter their birthdate information, and the return result will display the weather conditions for that day. Also the app will display the image of the day for the user from the seond API.
 
-# Day Planner
-
-
-## Description 
-
-
-Deployed Link: 
+Deployed Link: https://jgibsone4.github.io/weatherMemory/
 
 
 ## Table of Contents
@@ -27,18 +23,15 @@ Deployed Link:
 
 ## Usage 
 
-I have attached screenshots that I referenced for my project.
-
-![Screenshot of Client Site](https://github.com/jgibsone4/DayPlanner/blob/main/assets/05-third-party-apis-homework-demo.gif)
 
 
 ## Credits
 
-Collaborators                                   | GitHub repository
-------------                                    | -------------
-Kenneth Keller                                  |    
-Amanda Wiehrs                                   |
-Jason Gibson                                    |            
+Collaborators                               
+------------                                 
+Kenneth Keller                                      
+Amanda Wiehrs                                   
+Jason Gibson                                                
                                    
 
 ## Contributing
@@ -58,7 +51,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 [License Guidlines](https://github.com/jgibsone4/weatherMemory/blob/main/LICENSE) 
 
 BSD 2-Clause License
-Copyright (c) 2020, Jason Gibson
+Copyright (c) 2020, 
 All rights reserved.
 
 ---
